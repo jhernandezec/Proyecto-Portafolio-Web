@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Login</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">TechNova</a>
+<nav class="nav" id="mainNav">
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+<ul class="nav-list">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="quienes-somos.html">Quiénes somos</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li class="cart"><a href="#" id="cartLink">Carrito (<span id="cartCount">0</span>)</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container section">
+<h1>Iniciar sesión</h1>
+<p>Usa las credenciales de administrador para acceder al panel.</p>
+
+<form id="loginForm" class="contact-form" novalidate>
+<div class="form-row">
+<label for="username">Usuario</label>
+<input type="text" id="username" name="username" required placeholder="admin">
+<small class="error" data-for="username"></small>
+</div>
+<div class="form-row">
+<label for="password">Contraseña</label>
+<input type="password" id="password" name="password" required placeholder="admin">
+<small class="error" data-for="password"></small>
+</div>
+<button type="submit" class="btn primary">Entrar</button>
+<p class="form-success" id="loginSuccess" hidden>Ingreso correcto. Redirigiendo…</p>
+</form>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> TechNova. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+

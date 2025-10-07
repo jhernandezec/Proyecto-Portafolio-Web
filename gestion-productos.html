@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Gestión de productos</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">TechNova</a>
+<nav class="nav" id="mainNav">
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+<ul class="nav-list">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="quienes-somos.html">Quiénes somos</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li class="cart"><a href="#" id="cartLink">Carrito (<span id="cartCount">0</span>)</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container section">
+<h1>Gestión de productos</h1>
+
+<section class="service" style="padding:16px;">
+<h2>Nuevo producto</h2>
+<form id="productForm" class="contact-form" novalidate>
+<div class="form-row"><label for="pname">Nombre</label><input id="pname" required placeholder="PC Gamer Nova"></div>
+<div class="form-row"><label for="pprice">Precio (USD)</label><input id="pprice" type="number" step="0.01" min="0" required placeholder="1499"></div>
+<div class="form-row"><label for="ptag">Etiqueta</label><input id="ptag" placeholder="RTX 4070"></div>
+<div class="form-row"><label for="pimg">URL de imagen</label><input id="pimg" placeholder="https://..."></div>
+<button type="submit" class="btn primary">Guardar</button>
+<small class="error" id="productError"></small>
+</form>
+</section>
+
+<section class="section">
+<h2>Listado</h2>
+<div id="productAdminList" class="product-grid"></div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> TechNova. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+

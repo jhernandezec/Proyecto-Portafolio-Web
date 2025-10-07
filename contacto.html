@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Contacto</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">TechNova</a>
+<nav class="nav" id="mainNav">
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+<ul class="nav-list">
+<li><a href="index.html" data-page="inicio">Inicio</a></li>
+<li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+<li><a href="quienes-somos.html" data-page="quienes">Quiénes somos</a></li>
+<li><a href="contacto.html" data-page="contacto" class="active">Contacto</a></li>
+<li class="cart"><a href="#" id="cartLink">Carrito (<span id="cartCount">0</span>)</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container section">
+<h1>Contáctanos</h1>
+<p>Completa el formulario y te responderemos a la brevedad.</p>
+
+<form id="contactForm" class="contact-form" novalidate>
+<div class="form-row">
+<label for="name">Nombre</label>
+<input type="text" id="name" name="name" required placeholder="Tu nombre">
+<small class="error" data-for="name"></small>
+</div>
+<div class="form-row">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required placeholder="tu@email.com">
+<small class="error" data-for="email"></small>
+</div>
+<div class="form-row">
+<label for="message">Mensaje</label>
+<textarea id="message" name="message" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+<small class="error" data-for="message"></small>
+</div>
+<button type="submit" class="btn primary">Enviar</button>
+<p class="form-success" id="formSuccess" hidden>¡Gracias! Hemos recibido tu mensaje.</p>
+</form>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> TechNova. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+

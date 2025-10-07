@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Perfil</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">TechNova</a>
+<nav class="nav" id="mainNav">
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+<ul class="nav-list">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="quienes-somos.html">Quiénes somos</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li class="cart"><a href="#" id="cartLink">Carrito (<span id="cartCount">0</span>)</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container section" id="profileRoot">
+<h1>Perfil</h1>
+<p>Bienvenido, <strong id="userName">admin</strong>.</p>
+
+<div class="service-grid">
+<article class="service">
+<h2>Panel de control</h2>
+<p>Acceso rápido a funciones administrativas.</p>
+<div class="actions">
+<a class="btn" href="pedidos.html">Ver pedidos</a>
+<a class="btn" href="gestion-productos.html">Gestionar productos</a>
+<a class="btn" href="estadisticas.html">Estadísticas</a>
+</div>
+</article>
+<article class="service">
+<h2>Información de cuenta</h2>
+<ul>
+<li>Rol: Administrador</li>
+<li>Email: admin@technova.local</li>
+</ul>
+</article>
+<article class="service">
+<h2>Sesión</h2>
+<p>Controla tu sesión desde aquí.</p>
+<button class="btn" id="logoutBtn">Cerrar sesión</button>
+</article>
+</div>
+
+<section class="section" id="profileEdit">
+<h2>Editar datos personales</h2>
+<div class="service" style="padding:16px;">
+<form id="profileForm" class="contact-form" novalidate>
+<div class="form-row"><label for="pf_name">Nombre</label><input id="pf_name" required placeholder="Admin"></div>
+<div class="form-row"><label for="pf_email">Email</label><input id="pf_email" type="email" required placeholder="admin@technova.local"></div>
+<div class="form-row"><label for="pf_phone">Teléfono</label><input id="pf_phone" placeholder="+00 000 0000"></div>
+<button type="submit" class="btn primary">Guardar cambios</button>
+<small class="error" id="pf_error"></small>
+<p class="form-success" id="pf_success" hidden>Perfil actualizado.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> TechNova. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
